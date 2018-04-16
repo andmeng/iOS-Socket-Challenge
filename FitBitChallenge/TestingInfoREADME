@@ -1,0 +1,14 @@
+# Testing Info #
+Brief overview of how and what I would focus testing on in this project
+I would test two main components of this assignment:
+    1. Receiving and grabbing correct information from the server
+    2. Relative and Absolute Command Arithmetic (Making sure the RGB Values are correct as per the sequence of commands)
+
+Test #1
+For this I would make some form of "mock" server that sends a stream of hardcoded commands instead of random.
+This way I can assert exactly what should be being stored into the objects in this small application.
+
+Test #2
+Once again I would make some form of "mock" that sends a stream of hardcoded commands.
+Using this I would be able to run a test on the "commands" array in MainViewController.swift and make sure the order of
+RGB Values (the color that is being displayed) stored in the commands are correct based off the sequence of commands
